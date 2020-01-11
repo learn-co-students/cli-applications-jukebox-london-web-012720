@@ -1,15 +1,14 @@
-require ../bin/jukebox
-# songs = [
-#   "Phoenix - 1901",
-#   "Tokyo Police Club - Wait Up",
-#   "Sufjan Stevens - Too Much",
-#   "The Naked and the Famous - Young Blood",
-#   "(Far From) Home - Tiga",
-#   "The Cults - Abducted",
-#   "Phoenix - Consolation Prizes",
-#   "Harry Chapin - Cats in the Cradle",
-#   "Amos Lee - Keep It Loose, Keep It Tight"
-# ]
+songs = [
+  "Phoenix - 1901",
+  "Tokyo Police Club - Wait Up",
+  "Sufjan Stevens - Too Much",
+  "The Naked and the Famous - Young Blood",
+  "(Far From) Home - Tiga",
+  "The Cults - Abducted",
+  "Phoenix - Consolation Prizes",
+  "Harry Chapin - Cats in the Cradle",
+  "Amos Lee - Keep It Loose, Keep It Tight"
+]
 
 def help
   $stdout.puts(/I accept the following commands:/)
@@ -48,19 +47,19 @@ def exit_jukebox
   $stdout.puts('Goodbye')
 end
 
-# def run(songs)
-#   $stdout.puts(/Please enter a command:/)
-#   user_input = gets
-#   if user_input == 'exit'
-#     exit_jukebox
-#   end
-#   if user_input == 'help'
-#     help
-#   end
-#   if user_input == 'play'
-#     play(songs)
-#   end
-#   if user_input == 'list'
-#     list(songs)
-#   end
-# end
+def run(songs)
+  $stdout.puts(/Please enter a command:/)
+  user_input = gets
+  if user_input == 'exit'
+    exit_jukebox
+  end
+  if user_input == 'help'
+    help
+  end
+  if user_input == 'play'
+    play(songs)
+  end
+  if user_input == 'list'
+    list(songs)
+  end
+end
